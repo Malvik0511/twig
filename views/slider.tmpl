@@ -1,0 +1,24 @@
+<script src = "../js/slider.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/slider.css">
+<div class = 'slider'>
+	<div class = 'slider__slider-main'>
+		<img class = 'slider__img' id = "current-slide">
+		<div class = 'slider__img-src-container'>
+			{% for slide in slider.slides %}
+			<div class = 'slider__switch-container'>
+				<img class = "slider__switch" id = "switch-{{loop.index}}" src = "asserts/box.png">
+			</div>
+			<a href = {{slide}} class = 'slider_slide-src' hidden>{{loop.index}}</a>
+			{% endfor %}
+		</div>
+		<div class = "slider__controls-container">
+			<div class = "slider__slide-last-container">
+				<img class = 'slider__slide-last' src = "asserts/arrow_left.png" id = 'last-slide'>
+			</div>
+			<div class = "slider__slide-next-container">
+				<img class = 'slider__slide-next' src = "asserts/arrow_right.png" id = 'next-slide'>
+			</div>
+		</div>
+	</div>
+	
+</div>

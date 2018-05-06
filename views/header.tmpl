@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+<div class = "header">
+	<div class = "header__top-background">
+		<div class = "header__top">
+			<div class = "header__intro">
+				<div class = "header__logo-container">
+					<img class = "header__logo" src = {{header.logoSrc}}>
+				</div>
+				<div class = "header__service-type">{{header.serviceType}}</div>
+			</div>
+			<div class = "header__contacts">
+				<div class = "header__address">
+					<span class = "header__city">{{header.contacts.address.city}}</span>
+					<span class = "header__street">{{header.contacts.address.street}}</span>
+					<span class = "header__building-number">{{header.contacts.address.building}}</span>
+				</div>
+				<div class = header_phone-contaner>
+					<span class = "header_phone">{{header.contacts.phone}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "header__menu-background">
+		<div class = "header__menu">
+				<a href = "#" class="header__link"><img class = "header__link-container" src = {{header.mainLinkSrc}}></a></span>
+				{% for link in header.links %}
+	        		<span class = "header__link-container"><a class="header__link" href = "#">{{link}}</a></span>
+	    		{% endfor %}
+		</div>
+	</div>
+</div>

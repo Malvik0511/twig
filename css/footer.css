@@ -1,0 +1,54 @@
+.footer {
+  background: black;
+  padding: 15px 0px; }
+  .footer .footer__container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: auto; }
+    .footer .footer__container-footer .footer__customer-logo-container {
+      flex: 0 0 15%; }
+    .footer .footer__container-footer .footer__nav-container {
+      flex: 0 0 60%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .footer .footer__container-footer .footer__nav-container .footer__nav {
+        flex: 0 0 66%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap; }
+        .footer .footer__container-footer .footer__nav-container .footer__nav .footer__link-container {
+          padding: 0px 12px; }
+          .footer .footer__container-footer .footer__nav-container .footer__nav .footer__link-container .footer__link {
+            color: #818180;
+            text-decoration: none;
+            font-family: 'myriad pro';
+            font-size: 14pt; }
+          .footer .footer__container-footer .footer__nav-container .footer__nav .footer__link-container .footer__link:hover {
+            cursor: pointer;
+            opacity: 0.6; }
+    .footer .footer__container-footer .footer__developer-info {
+      flex: 0 0 15%;
+      color: white;
+      font-family: 'myriad pro';
+      font-size: 14pt;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center; }
+      .footer .footer__container-footer .footer__developer-info .footer__developed-by-title {
+        flex: 0 0 100%; }
+      .footer .footer__container-footer .footer__developer-info .footer__developer-logo-container {
+        flex: 0 0 40%; }
+        .footer .footer__container-footer .footer__developer-info .footer__developer-logo-container .footer__developer-logo {
+          width: 28px;
+          height: auto; }
+      .footer .footer__container-footer .footer__developer-info .footer__developer-page-link {
+        flex: 0 0 60%;
+        color: white;
+        font-family: 'myriad pro';
+        font-size: 14pt; }
+
+/*# sourceMappingURL=footer.css.map */

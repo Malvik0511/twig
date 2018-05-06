@@ -1,0 +1,22 @@
+<div class = "footer">
+	<div class = "footer__container-footer">
+		<link rel="stylesheet" type="text/css" href="../css/footer.css">
+		<div class = "footer__customer-logo-container">
+			<img class = "footer__customer-logo" src = {{footer.customerLogoSrc}}>
+		</div>
+		<div class = "footer__nav-container">
+			<div class = "footer__nav">
+				{% for link in footer.links %}
+				<span class = "footer__link-container"><a class = "footer__link" href = "#">{{link}}</a></span>
+				{% endfor %}
+			</div>
+		</div>
+		<div class = "footer__developer-info">
+			<p class = "footer__developed-by-title">&copy; {{footer.title}}</p>
+			<div class = "footer__developer-logo-container">
+				<img class = "footer__developer-logo" src = {{footer.logoSrc}}>
+			</div>
+			<a class = "footer__developer-page-link" href="#" >{{footer.developerSite}}</a>
+		</div>
+	</div>
+</div>

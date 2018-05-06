@@ -1,0 +1,50 @@
+<div class = "product">
+	<script src = "../js/product.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/product.css">
+	<div class = "product__puth">
+		{% for folder in product.folders %}
+			<span class = "product__puth-part">
+				{{folder}}/
+			</span>
+		{% endfor %}
+		<span class = "product__file-name">{{product.name}}</span>
+	</div>
+	<div class = "product__product">
+			<img class="product__photo" src = {{product.photo}}>
+		<form class = "product__order-container">
+			<div class = "product__features-container">
+				<p class = "product__product-name">{{product.name}}</p>
+				<div class = "product__form-data">
+					<div class = "product__description-container">
+						<div class = 'product__container-title product-container-title'>Характеристики</div>
+						<div class = "product__features product-info ">
+							{% for feature in product.features %}
+							<div class = "product__feature-container">
+								<input class = "product__feature-cheker" name = {{feature.name}} value = {{feature.cost}} type = "checkbox" hidden/>
+								<img class = "product__false-checkbox" src = "asserts/checkbox.png">
+								<label class = "product__feature-description">{{feature.name}}</label>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+					<div class = "product__description-container">
+						<div class = 'product__container-title product-container-title'>Информация</div>
+						<div class = "product__description product-info" >
+							<div class = "product_description-container">
+								<div class = "product__feature-description">{{product.description}}	</div>
+							</div>
+						</div>
+					</div>
+					<div class = "product__make-order">
+						<div class = "product__price-container">
+							<span class = "product__price" id = 'product-price'>{{product.defaultCost}} </span><span>{{product.currency}}</span>.
+						</div>
+						<div class = "product__submit-container">
+							<button type = "submit" class = "product__place-order btn btn-block btn-warning">ЗАКАЗАТЬ</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

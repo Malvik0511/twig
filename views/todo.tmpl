@@ -1,0 +1,26 @@
+<div class = "todo">
+	<script src = "../js/todo.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/todo.css">
+	<div class = "todo__container-todo">
+		<div class = "todo__title">{{todo.title}}</div>
+		<div class = "todo__todo-list">
+			{% for task in todo.tasks %}
+			<div class = "todo__task-container" id = "task-{{loop.index}}">
+				<span class = "todo__full-task">
+					<span class = "todo__todo-index todo-index">{{loop.index}}</span>. 
+					<span class = "todo__todo-task todo-task">{{task}}</span> 
+				</span>
+				<img class = "todo__edit-task" src="asserts/edit.png">
+				<img class = "todo__delete-task" src="asserts/remove.png">
+			</div>
+			{% endfor %}
+		</div>
+		<div class = "todo__edit-container">
+			<input class = "todo__input" type = "text" required/>
+			<div class = "todo__edit-control-container">
+				<img class = "todo__accept-task" src="asserts/accept.png">
+				<img class = "todo__clear-input" src="asserts/remove.png">	
+			</div>	
+		</div>
+	</div>
+</div>

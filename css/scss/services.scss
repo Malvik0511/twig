@@ -1,0 +1,58 @@
+$background: rgb(255, 187, 2);
+$widthMiddle: 60%;
+
+.services{
+
+	.services__title-container{
+		background:white;
+		padding: 30pt 0px 5pt 0px;
+		text-align:center;
+
+		.services__title{
+			font-family:'ptsans bold';
+			font-size:24pt;
+			width:$widthMiddle;
+			margin:auto;
+		}
+	}
+
+	.services__container{
+		background: $background;
+		margin:auto;
+		padding: 10pt 0pt;
+
+		.services__serveces{
+			width:$widthMiddle;
+			margin:auto;
+			display:flex;
+			justify-content: flex-start;
+			flex-wrap:wrap;
+
+			.services_service{
+				flex: 0 0 48%;
+				display:flex;
+				justify-content: flex-start;
+				padding: 25pt 0%;
+
+				.services__service-logo{
+				
+				}
+
+				.services__service-info{
+					flex: 0 0 70%;
+					padding:0pt 25pt;
+
+					.services__service-title{
+						font-family:'ptsans bold';
+						font-size:20pt;
+					}
+
+					.services__service-description{
+						font-family:'ptsans';
+						font-size:14pt;
+					}
+				}
+			}
+		}
+	}
+}

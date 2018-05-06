@@ -1,0 +1,35 @@
+.services .services__title-container {
+  background: white;
+  padding: 30pt 0px 5pt 0px;
+  text-align: center; }
+  .services .services__title-container .services__title {
+    font-family: 'ptsans bold';
+    font-size: 24pt;
+    width: 60%;
+    margin: auto; }
+.services .services__container {
+  background: #ffbb02;
+  margin: auto;
+  padding: 10pt 0pt; }
+  .services .services__container .services__serveces {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
+    .services .services__container .services__serveces .services_service {
+      flex: 0 0 48%;
+      display: flex;
+      justify-content: flex-start;
+      padding: 25pt 0%; }
+      .services .services__container .services__serveces .services_service .services__service-info {
+        flex: 0 0 70%;
+        padding: 0pt 25pt; }
+        .services .services__container .services__serveces .services_service .services__service-info .services__service-title {
+          font-family: 'ptsans bold';
+          font-size: 20pt; }
+        .services .services__container .services__serveces .services_service .services__service-info .services__service-description {
+          font-family: 'ptsans';
+          font-size: 14pt; }
+
+/*# sourceMappingURL=services.css.map */

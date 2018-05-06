@@ -1,0 +1,21 @@
+<div class = "services">
+	<link rel="stylesheet" type="text/css" href="../css/services.css">
+			<div class = "services__title-container" >
+				<div class = "services__title">{{services.title}}</div>
+			</div>
+			<div class = "services__container">
+				<div class = "services__serveces">
+					{% for service in services.services %}
+					<div class = "services_service">
+						<img class = "services__service-logo" src = {{service.logoSrc}}>
+						<div class = "services__service-info">
+							<p class = "services__service-title">{{service.title}}</p>
+							<p class = "services__servise-description">{{service.description}}</p>			
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

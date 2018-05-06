@@ -1,0 +1,77 @@
+$widthMiddle: 60%;
+
+.todo{
+	padding: 30pt 0pt 70pt 0pt;
+	.todo__container-todo{
+		width:$widthMiddle;
+		margin:auto;
+
+		.todo__title{
+			padding:5pt 0pt 5pt 0pt;
+			font-family:'ptsans bold';
+			font-size:24pt;
+		}
+
+		.todo__todo-list{
+			padding-top:10pt;
+			.todo__task-container{
+				padding-bottom:20pt;
+				display:flex;
+				align-items:center;
+			}
+
+			.todo__task-container{
+
+				.todo__full-task{
+					font-family:'ptsans bold';
+					font-size:24pt;
+					padding-right:24pt;
+				}
+
+				.todo__edit-task,
+				.todo__delete-task{
+					padding:0% 10pt;
+				}
+
+				.todo__edit-task:hover,
+				.todo__delete-task:hover{
+					cursor:pointer;
+					border-radius: 2px;
+					background-color: rgba(0,0,0, 0.1);
+				}
+			}
+
+		}
+
+		.todo__edit-container{
+			display:flex;
+			justify-content:flex-start;
+			align-items:center;
+
+			.todo__edit-control-container{
+				padding-left:15pt;
+
+				.todo__accept-task, 
+				.todo__clear-input{
+					padding:0% 10pt;
+				}
+
+				.todo__accept-task:hover, 
+				.todo__clear-input:hover{
+					cursor:pointer;
+					border-radius: 2px;
+					background-color: rgba(0,0,0, 0.1);
+				}
+			}
+
+			.todo__input{
+				flex:0 0 56%;
+				height:44pt;
+				border-radius:5px;
+				font-size:24pt;
+				box-shadow: inset 1px 1px 5px 0px gray;
+			}
+
+		}
+	}
+}

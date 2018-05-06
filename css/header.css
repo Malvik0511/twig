@@ -1,0 +1,45 @@
+.header .header__top-background {
+  background: #ffbb02;
+  padding: 15px 0px; }
+  .header .header__top-background .header__top {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center; }
+  .header .header__top-background .header__intro {
+    flex: 0 0 33%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .header .header__top-background .header__intro .header__logo-container {
+      flex: 0 0 45%; }
+    .header .header__top-background .header__intro .header__service-type {
+      flex: 0 0 50%;
+      font-family: 'ptsans bold';
+      font-size: 14pt; }
+  .header .header__top-background .header__contacts {
+    flex: 0 0 25%;
+    font-family: ptsans;
+    font-size: 14pt;
+    text-align: right; }
+.header .header__menu-background {
+  background: white;
+  padding: 14pt 0px; }
+  .header .header__menu-background .header__menu {
+    width: 60%;
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center; }
+    .header .header__menu-background .header__menu .header__link-container {
+      padding-right: 30px; }
+      .header .header__menu-background .header__menu .header__link-container .header__link {
+        color: black;
+        text-decoration: none;
+        font-family: 'ptsans';
+        font-size: 14pt; }
+      .header .header__menu-background .header__menu .header__link-container .header__link:hover {
+        opacity: 0.6; }
+
+/*# sourceMappingURL=header.css.map */

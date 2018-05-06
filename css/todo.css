@@ -1,0 +1,49 @@
+.todo {
+  padding: 30pt 0pt 70pt 0pt; }
+  .todo .todo__container-todo {
+    width: 60%;
+    margin: auto; }
+    .todo .todo__container-todo .todo__title {
+      padding: 5pt 0pt 5pt 0pt;
+      font-family: 'ptsans bold';
+      font-size: 24pt; }
+    .todo .todo__container-todo .todo__todo-list {
+      padding-top: 10pt; }
+      .todo .todo__container-todo .todo__todo-list .todo__task-container {
+        padding-bottom: 20pt;
+        display: flex;
+        align-items: center; }
+      .todo .todo__container-todo .todo__todo-list .todo__task-container .todo__full-task {
+        font-family: 'ptsans bold';
+        font-size: 24pt;
+        padding-right: 24pt; }
+      .todo .todo__container-todo .todo__todo-list .todo__task-container .todo__edit-task,
+      .todo .todo__container-todo .todo__todo-list .todo__task-container .todo__delete-task {
+        padding: 0% 10pt; }
+      .todo .todo__container-todo .todo__todo-list .todo__task-container .todo__edit-task:hover,
+      .todo .todo__container-todo .todo__todo-list .todo__task-container .todo__delete-task:hover {
+        cursor: pointer;
+        border-radius: 2px;
+        background-color: rgba(0, 0, 0, 0.1); }
+    .todo .todo__container-todo .todo__edit-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .todo .todo__container-todo .todo__edit-container .todo__edit-control-container {
+        padding-left: 15pt; }
+        .todo .todo__container-todo .todo__edit-container .todo__edit-control-container .todo__accept-task,
+        .todo .todo__container-todo .todo__edit-container .todo__edit-control-container .todo__clear-input {
+          padding: 0% 10pt; }
+        .todo .todo__container-todo .todo__edit-container .todo__edit-control-container .todo__accept-task:hover,
+        .todo .todo__container-todo .todo__edit-container .todo__edit-control-container .todo__clear-input:hover {
+          cursor: pointer;
+          border-radius: 2px;
+          background-color: rgba(0, 0, 0, 0.1); }
+      .todo .todo__container-todo .todo__edit-container .todo__input {
+        flex: 0 0 56%;
+        height: 44pt;
+        border-radius: 5px;
+        font-size: 24pt;
+        box-shadow: inset 1px 1px 5px 0px gray; }
+
+/*# sourceMappingURL=todo.css.map */
